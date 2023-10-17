@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>NUS - Internal Tenants - Invoice for Jul 23 (Actual).xlsx</title>
+        <meta name="author" content="iris.yao" />
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="company-info">
+            <div class="info">
+                <span>Issued on behalf of<span>
+                <span>National University of Singapore</span>
+                <span class="institute">ARI, Asia Research Institute (AS-8)</span>
+            </div>
+            <div class="logo">
+                <img src="https://www.iviva.com/wp-content/uploads/2023/07/iviva-logo-1.svg" />
+                <span>Authorised Agent</span>
+                <span class="company">C&W Services (S) Pte Ltd</span>
+                <span>Reg. No.: 199805375C</span>
+                <span>750A Chai Chee Road</span>
+                <span>#05-01 ESR BizPark @ Chai Chee</span>
+                <span>Singapore 469001</span>
+                <span>www.cwservices.sg</span>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="electricity-chart">
+                <div id="electricity-chart"></div>
+            </div>
+            <div class="water-chart">
+                <div id="water-chart"></div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var electricityChart = new ej.charts.Chart({
+            title: "Electricity (kWh)",
+            //Initializing Primary X Axis
+            primaryXAxis: {
+                valueType: 'Category',
+            },
+            
+            //Initializing Chart Series
+            series: [
+                {
+                    type: 'Column',
+                    fill: "#FFD68A",
+                    marker: {
+                         dataLabel: { visible: true }
+ 
+                   },
+                    dataSource: [
+                        { month: "Jul-23", value: 4100 },
+                        
+                    ],
+                    xName: 'month',
+                    yName: 'value',
+                }
+            ],
+        });
+        electricityChart.appendTo('#electricity-chart');
+
+        
+    </script>
+    <script>
+        var waterChart = new ej.charts.Chart({
+            title: "Water (CuM)",
+            //Initializing Primary X Axis
+            primaryXAxis: {
+                valueType: 'Category',
+            },
+
+            //Initializing Chart Series
+            series: [
+                {
+                    type: 'Column',
+                    fill: "#00dde7",
+                    marker: {
+                         dataLabel: { visible: true }
+ 
+                   },
+                    dataSource: [
+                        { month: "Jul-23", value: 18 },
+                    ],
+                    xName: 'month',
+                    yName: 'value',
+                }
+            ],
+        });
+        waterChart.appendTo('#water-chart');
+    </script>
+</html>

@@ -1,0 +1,108 @@
+body {
+    margin: 75px 75px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.company-info{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+.info span {
+    display: block;
+}
+
+.info .institute {
+    margin-top: 25px;
+}
+
+.logo {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+.logo img{
+    margin-bottom: 15px;
+}
+
+.logo span{
+    font-size: 14px;
+}   
+
+.logo .company {
+    font-weight: bold;
+}
+
+.tables-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tables-info .tables span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tables-info .tables table {
+    width: 275px;
+    margin-top: 25px;
+}
+
+.tables-info .description-info {
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.tables-info .description-info span{
+    display: block;
+}
+
+.main-table {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.main-table table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.main-table table td{
+    text-align: center;
+}
+
+.main-table span {
+    font-size: 14px;
+    margin-left: 25px;
+    display: flex;
+    font-weight: bold;
+}
+
+.charts {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    gap: 75px;
+    box-sizing: border-box;
+}
+
+.electricity-chart, .water-chart{
+    padding: 25px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
